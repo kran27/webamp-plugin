@@ -25,11 +25,10 @@
         if (!webamp) {
             initWebamp();
             webamp.renderWhenReady(document.getElementById('player'));
-        } else {
-            webamp.appendTracks([{ url: entry.uri }]);
-            if (closed) {
-                webamp.reopen();
-            }
+        }
+        webamp.appendTracks([{ url: entry.uri }]);
+        if (closed) {
+            webamp.reopen();
         }
     }
 
