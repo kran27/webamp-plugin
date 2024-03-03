@@ -18,7 +18,7 @@
     }
 
     HFS.onEvent('fileMenu', ({ entry }) =>
-        /mp3|wav|aac|ogg|flac/.test(entry.ext) &&
+        new RegExp(config.regex).test(entry.ext) &&
         { label: "Load Into Webamp", icon: 'audio', onClick: () => play(entry) })
 
     function play(entry) {
