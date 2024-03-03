@@ -1,4 +1,4 @@
-exports.version = 1
+exports.version = 1.01
 exports.description = "Use Webamp from within HFS"
 exports.apiRequired = 8.1
 exports.repo = "kran27/webamp-plugin"

@@ -1,4 +1,5 @@
 {
+    const config = HFS.getPluginConfig()
     HFS.onEvent('beforeHeader', () => `<div id='player'/>`)
 
     let webamp = null;
